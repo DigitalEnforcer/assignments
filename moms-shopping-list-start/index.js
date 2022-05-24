@@ -18,6 +18,21 @@ form.addEventListener ("submit", function(event){
     editButton.textContent = "Edit"
     editButton.classList.add("edit")
     liItem.append(editButton)
+    const editItem = document.createElement("input")
+    editButton.addEventListener("click", ()=>{
+        if (editButton.textContent === "Edit"){
+            editButton.textContent = "Save"
+            editItem.value = spanItem.textContent
+            liItem.append(editItem)
+            console.log(editButton.textContent)
+        }
+        else if (editButton.textContent === "Save"){
+            spanItem.textContent = editItem.value
+            editButton.textContent = "Edit"
+            editItem.remove()
+            console.log(spanItem.textContent)
+        }
+    })
 
 //adds cancel button
     const xButton = document.createElement("button")
