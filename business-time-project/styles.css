@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-attachment: fixed;
+}
+
+.header {
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(102, 101, 115, 0.7), rgba(102, 101, 115, 0.7)), url(images/background.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    
+}
+
+nav {
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    
+}
+
+.catchphrase h1 {
+    display: flex;
+    justify-content: center;
+}
+.titleName{
+    
+    padding: 10px 0px;
+    font-size: 90px;
+    position: relative;
+    text-align: center;
+    color:#fff;
+    text-decoration:none;
+
+    
+    
+}
+nav img {
+    width: 150px;
+    border: 10px solid #be8ebc;
+    border-radius: 50%;
+    background-color:rgb(24, 24, 24);
+    
+}
+
+.nav-links {
+    flex:1;
+    text-align:right;
+    
+}
+.nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+   
+}
+
+.nav-links ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background: #da7cd7;
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width:100%;
+}
+
+.text-box {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}
+
+.text-box img{
+    display:flex;
+    align-items: flex-end;
+    width: 250px;
+    border: 5px solid white;
+    border-radius: 30%;
+    margin: 5% 15%;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+
+
+.text-box h1 {
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+.text-box article {
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.contact-info {
+    display:flex;
+    grid-column: 2/4;
+    grid-row:2/4;
+
+}
+
+.contact-info div {
+    margin:10px;
+    
+}
+
+.contact-info h3 {
+    text-align: center;
+    font-style: italic;
+}

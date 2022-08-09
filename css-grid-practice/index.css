@@ -1,0 +1,131 @@
+/* phone */
+#grid-container {
+    display: grid;
+    grid-gap: 5px;
+    font-size: 50px;
+    height: 200px;
+}
+
+header {
+    background-color: red;
+    border-radius: 5px;
+    padding: 5%;
+   
+}
+nav {
+    background-color: blue;
+    border-radius: 5px;
+    padding: 5%;
+   
+}
+
+main {
+    background-color: green;
+    border-radius: 5px;
+    padding: 5%;
+    
+}
+
+section {
+    background-color: purple;
+    border-radius: 5px;
+    padding: 5%;
+
+}
+
+footer {
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 5%;
+    
+}
+
+/* Tablet */
+@media only screen and (min-width: 550px) {
+    #grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+        height: 200px;
+        font-size: 35px;
+    }
+    header {
+        background-color: red;
+        border-radius: 5px;
+        grid-column: 1/5;
+        padding: 10px;
+    }
+    nav {
+        background-color: blue;
+        border-radius: 5px;
+        grid-column: 1/2;
+        padding: 10px;
+    }
+    
+    main {
+        background-color: green;
+        border-radius: 5px;
+        grid-column: 2/5;
+        padding: 10px;
+    }
+    
+    section {
+        background-color: purple;
+        border-radius: 5px;
+        grid-column: 1/5;
+        padding: 10px;
+    }
+    
+    footer {
+        background-color: yellow;
+        border-radius: 5px;
+        grid-column: 1/5;
+        padding: 10px;
+    }
+}
+/* Laptop */
+@media only screen and (min-width: 1080px) {
+
+    #grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+        height: 200px;
+        font-size: 25px;
+        padding: 10px;
+    
+    }
+    header {
+        background-color: red;
+        border-radius: 5px;
+        grid-column: 1/5;
+        padding: 10px;
+    }
+    nav {
+        background-color: blue;
+        border-radius: 5px;
+        grid-column: 1/2;
+        padding: 10px;
+    }
+    
+    main {
+        background-color: green;
+        border-radius: 5px;
+        grid-column: 2/4;
+        padding: 10px;
+    }
+    
+    section {
+        background-color: purple;
+        border-radius: 5px;
+        grid-column: 4/5;
+        padding: 10px;
+    }
+    
+    footer {
+        background-color: yellow;
+        border-radius: 5px;
+        grid-column: 1/5;
+        padding: 10px;
+    }
+}

@@ -154,9 +154,17 @@ addBtn.addEventListener("click", function() {
 
 var hello = document.getElementById("hello").textContent = "Hi Friends"
 hello = document.getElementById("hello").style.backgroundColor = "red"
-*/
+
 
 var result = document.getElementsByClassName("hello")
 result[0].innerHTML = "Hello People"
 
 console.log(result[0])
+*/
+
+var eventsAtWork = ["work", "pretend to work", "party", "work", "meeting", "party", "daily grind", "work", "party"]
+for (var i = 0; i <= eventsAtWork.length; i++){
+    if (eventsAtWork[i] === "party"){
+        console.log ("it's party time")
+    }
+}
