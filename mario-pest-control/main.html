@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "styles.css">
+    <title>Mario Pest Control</title>
+</head>
+<body>
+    
+        <header>Mario Pest Control</header>
+        <form name = "enemyForm" class = "enemyForm">
+            <div id = "gridContainer">
+            <div id = "goomba" class = "enemy">
+                <div class = "enemyImage">
+                    <img src = "images/goombat.png">
+                </div>
+                <p>How many Goombas did you collect? </p>
+                <input type = "number" name = "numOfGoomba" class = "inputNumber">
+                
+            </div>
+            
+            <div id = "bombOmb" class = "enemy">  
+                <div class = "enemyImage">            
+                    <img src = "images/bomb-omb.png">
+                </div>
+                <p>How many Bomb-Ombs did you collect? </p>
+                <input type = "number" name = "numOfBombOmb" class = "inputNumber">
+            </div>
+            
+            <div id = "cheepCheep" class = "enemy">
+                <div class = "enemyImage">
+                    <img src = "images/cheep-cheep.png">
+                </div>
+                <p>How many Cheep-cheeps did you collect? </p>
+                <input type = "number" name = "numOfCheepCheep" class = "inputNumber">
+                
+            </div>
+            <button>Final Total</button>
+            </div>
+        </form>
+    <div id = "finalPrice"></div>
+    <footer>
+        <div id = "email">Email: IKillBugs@MPC.com</div>
+        <div id = "website"><a href="https://www.google.com">www.MarioPestControl.com</a></div>
+        <div id = "address">2114 89th St Ct E <br> Puyallup, WA 98487</div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="intro">Welcome to the World's Greatest Calculator!</div>
+    <div class = "grid-container">
+        <div id = "addition"> 
+            <span class = "explanation">Please Enter 2 Numbers to Add Together:</span>
+            <form name = "additionForm" class = "additionForm">
+                <input type = "number" placeholder = "First Number" name = "add1">
+                <input type = "number" placeholder = "Second Number" name = "add2">
+                <button>Calculate</button>
+            </form>
+            <span class = "question">The Answer Is:</span>
+            <span id = "addAnswer"></span>
+        </div>
+        <div id = "subtraction">
+            <span class = "explanation">Please Enter 2 Numbers to Subtract from Each Other:</span>
+            <form name = "subtractionForm" class = "subtractionForm">
+                <input type = "number" placeholder = "First Number" name = "sub1">
+                <input type = "number" placeholder = "Second Number" name = "sub2">
+                <button>Calculate</button>
+            </form>
+            <span class = "question">The Answer Is:</span>
+            <span id = "subAnswer"></span>
+        </div>
+        <div id = "multiply">
+            <span class = "explanation">Please Enter 2 Numbers to Multiply Together:</span>
+            <form name = "multiplyForm" class = "multiplyForm">
+                <input type = "number" placeholder = "First Number" name = "mult1">
+                <input type = "number" placeholder = "Second Number" name = "mult2">
+                <button>Calculate</button>
+            </form>
+            <span class = "question">The Answer Is:</span>
+            <span id = "multAnswer"></span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

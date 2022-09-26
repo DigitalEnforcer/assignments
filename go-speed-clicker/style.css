@@ -1,0 +1,35 @@
+#container {
+    display:grid;
+    padding: 30px;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+
+div {
+    padding:50px;
+    text-align: center;
+}
+
+#counter {
+    font-size: 100px;
+    color: red;
+}
+#clickDisplay {
+    font-size: 100px;
+}
+
+#clicks{
+    font-size: 100px;
+}
+
+button {
+    size: 50px;
+    padding: 10px;
+}
+
+#button {
+    grid-column: 3/4;
+}
+
+#clicker {
+    grid-column: 2/3;
+}

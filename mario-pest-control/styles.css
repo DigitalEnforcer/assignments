@@ -1,0 +1,101 @@
+
+body{
+    margin: 5px;
+    padding: 5px;
+}
+
+img{
+    height:150px;
+}
+
+.enemyImage {
+    display: flex;
+    justify-content: center;
+}
+
+.inputNumber {
+    font-size: large;
+}
+p {
+    text-align: center;
+    margin: 0px;
+}
+
+#gridContainer{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 3%; 
+    
+}
+
+#goomba{
+    display: grid;
+    background-color: rgb(189, 103, 103);
+    border-radius: 30px;
+    grid-column: 2/3;
+}
+
+
+
+#bombOmb{
+    display: grid;
+    background-color: rgb(90, 156, 237);
+    border-radius: 30px;
+    grid-column: 3/4;
+    
+}
+
+#cheepCheep{
+    display: grid;
+    background-color:rgb(102, 200, 85);
+    border-radius: 30px;
+    grid-column: 4/5;
+}
+
+button{
+    grid-row: 2/2;
+    grid-column:3/4;
+}
+
+header{
+    display:grid;
+    font-family: Impact, Charcoal, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #f60a0a;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-style: italic;
+    border: 5px solid rgb(34, 0, 255);
+    border-radius: 20px;
+    
+    grid-column: 1/13;
+}
+
+footer {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#finalPrice {
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    color: #f60a0a;
+    font-weight: 400;
+    background: #FFFFFF;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+a {
+    color: blue;
+}
+
+
+
+
+
+

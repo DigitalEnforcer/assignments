@@ -1,0 +1,60 @@
+
+body{
+    background-color: rgb(204, 204, 204);
+    margin: 5px;
+    padding: 5px;
+}
+
+#intro{
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    border: 5px solid sandybrown;
+    border-radius: 40%;
+    background-color: beige;
+}
+.grid-container{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5%;
+    
+}
+
+.grid-container > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3);
+    color: white;
+    font-size: 25px;
+    height: 250px;
+    border: 2px solid black;
+    text-align:center;
+    
+}
+.additionForm{
+    grid-column: 1/3;
+}
+
+.subtractionForm{
+    grid-column: 1/3;
+}
+
+.multiplyForm{
+    grid-column: 1/3;
+}
+
+.explanation {
+    grid-column: 1/3;
+}
+
+#addition{
+    background-color: rgb(189, 103, 103);
+}
+
+#subtraction{
+    background-color: rgb(90, 156, 237);
+}
+#multiply{
+    background-color:rgb(102, 200, 85);
+}
