@@ -1,0 +1,440 @@
+@font-face {
+	font-family: 'verdemoderna';
+	src:url('verdemoderna.eot');
+	src:url('verdemoderna.eot?#iefix') format('embedded-opentype'),
+		url('verdemoderna.woff') format('woff'),
+		url('verdemoderna.ttf') format('truetype'),
+		url('verdemoderna.svg#verdemoderna') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+
+
+.bg1 > img {
+	padding: 40px;
+	width: 125px;
+	height:125px;
+	
+}
+.bg1 {
+	background-attachment: fixed, fixed, scroll;
+	background-image: url(images/contours-opaque.png), url(images/gridlines-opaque.png), url(images/huntington.jpg);
+	background-repeat: repeat, repeat, no-repeat;
+	background-size: auto, auto, auto;
+}
+
+
+
+.bg2 {
+	background-attachment: scroll, scroll, fixed;
+	background-image: url(images/contours-opaque.png), url(images/gridlines-opaque.png), url(images/bamboo.png);
+	background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+}
+
+.container > div:nth-child(1) {
+	display:flex;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+
+.artistTitle {
+	text-transform: uppercase;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 19px;
+	margin-bottom: 0px;
+	font-weight: lighter;
+	color:#607476;
+	transition: 0.3s;
+}
+
+.artistTitle:hover {
+	color: #70b0a3;
+	cursor: pointer;
+	
+}
+
+hr{
+	width: 70%;
+	background-color:rgb(50, 80, 80, 0);
+	margin: 30px auto 30px auto;
+}
+.authors > ul {
+	width:auto;
+	padding-left: 0px;
+	padding-right:0px;
+	margin: 35px 30% 0% 15%;
+}
+
+.by {
+	color:rgb(96, 116, 118, 0.6);
+	font-style:italic;
+	font-size: 20px;
+}
+
+.artist {
+	color: #616857;
+	font-size: 15px;
+	font-family: 'Libre Baskerville', serif;
+	transition: 0.3s;
+}
+
+.artist:hover {
+	color: #70b0a3;
+	cursor: pointer;
+
+}
+
+.bg1 > div {
+	display:flex;
+	flex-direction:column;
+
+}
+.navLinks {
+	margin: 20% auto auto auto;
+}
+.navLinks > ul {
+	width:auto;
+	padding-left: 0px;
+	padding-right:0px;
+	margin: 35px 30% 0% 15%;
+}
+
+.navTitle {
+	text-transform: uppercase;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 19px;
+	margin-bottom: 0px;
+	font-weight: lighter;
+	color:#607476;
+	transition: 0.3s;
+}
+
+.navTitle:hover {
+	color: #70b0a3;
+	cursor: pointer;
+}
+
+
+
+
+.title{
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: lighter;
+	color: white;
+	font-size: 55px;
+	margin:0px;
+	padding:0px;
+}
+
+.subtitle{
+	font-style:italic;
+	font-weight: lighter;
+	
+	color:white;
+	font-size:30px;
+	margin:0px;
+	padding:0px;
+	color: rgba(255,255,255,0.6);
+}
+
+.designBox {
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: lighter;
+	color: white;
+	font-size: 19px;
+	padding: 20px 40px 20px 40px;
+	margin: 1px;
+	background-color:rgba(255, 255, 255, 0.218);
+	transition: 0.3s;
+	
+}
+
+.designBox:hover {
+	background-color:rgba(255, 255, 255, 0.518);
+	cursor: pointer;
+}
+
+.container > div:nth-child(2){
+	display:flex;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+}
+
+.fontclass1 {
+	margin-top: 30px;
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: lighter;
+	text-transform: uppercase;
+	font-size: 29px;
+}
+
+.container > div:nth-child(3){
+	line-height: 30px;
+	background-color:white;
+	font-family: 'Libre Baskerville', serif;
+	color: #325050;
+}
+
+.container > div:nth-child(4){
+	background-color:rgba(187, 204, 197, 0.577);
+}
+
+.container > div:nth-child(5){
+	background-color:rgba(138,188,159,0.5);
+	line-height: 30px;
+	font-family: 'Libre Baskerville', serif;
+	color: #325050;
+}
+
+.main {
+	margin:70px 120px 50px 156px;
+}
+
+
+.container > div:nth-child(6){
+	background-color:rgba(114, 174, 139, 0.5);
+	
+}
+
+.container > div:nth-child(7){
+	line-height: 30px;
+	background-color:white;
+	font-family: 'Libre Baskerville', serif;
+	color: #325050;
+	
+}
+
+.container > div:nth-child(8){
+	background-color:rgba(187, 204, 197, 0.577);
+	
+}
+
+.container > div:nth-child(10){
+	background-color:#134347;
+	
+}
+
+.footer {
+	grid-column:1/3;
+}
+
+.finalNotes {
+	display:flex;
+	font-size: 30px;
+	justify-content: center;
+	align-items: center;
+	padding: 95px 180px;
+	font-family: 'Libre Baskerville', serif;
+
+}
+
+.finalNotesNormal > a {
+	color: white;
+	text-decoration: none;
+}
+
+.finalNotesNormal > a:hover{
+	text-decoration: underline;
+
+}
+
+.finalNotesNormal {
+	color: rgba(255,255,255,0.8);
+}
+
+.finalNotesStylized {
+	font-style:italic;
+	color: rgba(255,255,255,0.6);
+	font-weight:lighter
+}
+
+.icons {
+	padding: 30px 200px 30px 200px;
+	display:flex;
+	color:rgba(255, 255, 255, 0.556);
+	font-size: 60px;
+	justify-content: space-evenly;
+	font-family: 'verdemoderna' ;
+}
+
+.icons > div > a {
+	color:rgba(255, 255, 255, 0.556);
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.icons > div > a:visited {
+	color:rgba(255, 255, 255, 0.556);
+}
+
+.icons > div > a:hover {
+	color:rgba(255, 255, 255);
+}
+
+@media only screen and (max-width: 1132px){
+	
+	.container > div:nth-child(1){
+		background-attachment: fixed, fixed, scroll;
+		background-image: url(images/contours-opaque.png), url(images/gridlines-opaque.png), url(images/huntington.jpg);
+		background-repeat: repeat, repeat, no-repeat;
+		background-size: auto, auto, cover;
+		grid-column: 1/3;
+		grid-row:1/2;
+	}
+	.container > div:nth-child(2){
+		background-color:rgb(50, 80, 80, 0);
+		background-image: none;
+		align-items: flex-end;
+		grid-column: 1/3;
+		grid-row:1/2;
+	}
+	.box {
+		display: flex;
+		align-items: center;
+		width:100%;
+	}
+	.container > div:nth-child(3){
+		grid-column: 1/3;
+	}
+	.container > div:nth-child(4){
+		grid-column: 1/3;
+		grid-row:9/10;
+	}
+	.authors {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		background-color: white;
+	}
+
+	.firstArtist {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	.secondArtist {
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+	.thirdArtist{
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+	.fourthArtist{
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+	.fifthArtist{
+		grid-column: 1/2;
+		grid-row: 5/6;
+	}
+	.sixthArtist{
+		grid-column: 2/3;
+		grid-row: 5/6;
+	}
+	.seventhArtist{
+		grid-column: 1/2;
+		grid-row: 7/8;
+	}
+	.eigthArtist{
+		grid-column: 2/3;
+		grid-row: 7/8;
+	}	
+
+	hr{
+		width: 100%;
+	}
+
+	.finalHr {
+		visibility: hidden;
+	}
+
+	.finalHr2 {
+		display: none;
+	}
+
+	.navLinks > hr {
+		margin: 0px;
+	}
+	.container > div:nth-child(5){
+		grid-column: 1/3;
+	}
+	.container > div:nth-child(6){
+		grid-column: 1/3;
+		grid-row:10/11;
+	}
+	
+	.navLinks {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: auto auto auto auto;
+
+	}
+	.navLinks > ul > h1 {
+		margin: auto auto 20px auto;
+	}
+
+	.nav1 {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	.nav2 {
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+
+	.nav3 {
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+
+	.nav4 {
+		grid-column: 2/3;
+		grid-row: 3/4;
+
+	}
+
+	.nav5 {
+		grid-column: 1/2;
+		grid-row: 5/6;
+	}
+
+	.container > div:nth-child(7){
+		grid-column: 1/3;
+	}
+	.container > div:nth-child(8){
+		grid-column: 1/3;
+	}
+	.container > div:nth-child(9){
+		grid-column: 1/3;
+	}
+
+	.finalNotes {
+		display:flex;
+		font-size: 20px;
+		justify-content: center;
+		align-items: center;
+		padding: 5% 15%;
+		font-family: 'Libre Baskerville', serif;
+	}
+
+	.container > div:nth-child(10){
+		grid-column: 1/3;
+	}
+}

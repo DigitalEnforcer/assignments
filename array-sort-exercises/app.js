@@ -1,4 +1,4 @@
-/* Example 1: Sort an Array of Numbers from least to greatest
+// Example 1: Sort an Array of Numbers from least to greatest
 
 const numbers = [1, 3, 5, 2, 90, 20]
 
@@ -7,39 +7,39 @@ numbers.sort(function(a,b){
 })
 
 console.log (numbers)
-*/
 
-/* Example 2: Sort an Array of Numbers from greatest to least
 
-const numbers = [1, 3, 5, 2, 90, 20]
+// Example 2: Sort an Array of Numbers from greatest to least
 
-numbers.sort(function(a,b){
-    return b-a
-})
+// const numbers = [1, 3, 5, 2, 90, 20]
 
-console.log (numbers)
-*/
+// numbers.sort(function(a,b){
+//     return b-a
+// })
 
-/* Example 3: Sort an Array from shortest string to longest
+// console.log (numbers)
 
-const arr = ["dog", "wolf", "by", "family", "eaten"]
 
-arr.sort(function (a,b){
-    return a.length - b.length
-})
+//Example 3: Sort an Array from shortest string to longest
 
-console.log (arr)
+// const arr = ["dog", "wolf", "by", "family", "eaten"]
 
-*/
+// arr.sort(function (a,b){
+//     return a.length - b.length
+// })
 
-/* Example 4: Sort an Array alphabetically
+// console.log (arr)
 
-const arr = ["dog", "wolf", "by", "family", "eaten"]
 
-arr.sort()
 
-console.log(arr)
-*/
+// Example 4: Sort an Array alphabetically
+
+// const arr = ["dog", "wolf", "by", "family", "eaten"]
+
+// arr.sort()
+
+// console.log(arr)
+
 
 /* Example 5: Sort objects in array by age
 

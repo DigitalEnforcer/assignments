@@ -1,4 +1,4 @@
-/* Example 1: Double the numbers in the array
+ /*Example 1: Double the numbers in the array
 
 const numbers = [3, 15, 192]
 const double = numbers.map(numbers => numbers * 2)
