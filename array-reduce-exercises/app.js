@@ -17,8 +17,8 @@ const together = arr.reduce(function(final,num){
 console.log(together)
 */
 
-/* Example 3: Turn an array of voter objects into an array of how many voted
-
+/*Example 3: Turn an array of voter objects into an array of how many voted
+*/
 const voters = [
     {name:'Bob' , age: 30, voted: true},
     {name:'Jake' , age: 32, voted: true},
@@ -42,7 +42,7 @@ const whoVoted = voters.reduce(function(final, voters){
 },0)
 
 console.log(whoVoted)
-*/
+
 
 /* Example 4: Figure out how much it would cost to buy everything at once
 

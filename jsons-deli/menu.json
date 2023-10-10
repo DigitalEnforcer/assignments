@@ -1,0 +1,92 @@
+{
+    "appetizers": [
+        {
+            "nameOfAppetizer": "Onion Rings",
+            "ingredients": ["Onions", "Bread", "Grease"],
+            "description": "These beautiful onion rings are cooked in chicken grease to really bring out the flavor."
+        },
+        {
+            "nameOfAppetizer": "Buffalo Finger Chicken",
+            "ingredients": ["Buffalo Meat", "BBQ Sauce", "Pepper"],
+            "description": "These buffalo finger chickens will melt in your mouth and in your hand."
+        },
+        {
+            "nameOfAppetizer": "Applesauce",
+            "ingredients": ["Apples", "Sugar", "Cinnamon"],
+            "description": "Crushed apples off the coast of California are put into a blender and had sugar and cinnamon added to it."
+        }
+
+    ],
+    "cold sandwiches": [
+        {
+            "nameOfColdSandwhich": "Ham Sandwich",
+            "ingredients": ["Bread", "Ham", "Mayonaise"],
+            "description": "This sandwich was crafted by a two year old in the mountains of Denver. Fresh ham from the farm off Pigs R Us Farm."
+        },
+        {
+            "nameOfColdSandwhich": "Peanut Butter and Jelly",
+            "ingredients": ["Peanut Butter", "Jelly", "Bread"],
+            "description": "A classic as old as the dinosaurs. This PB&J sandwich will make you wish your mom still packed your school lunches."
+        },
+        {
+            "nameOfColdSandwhich": "Turkey Sandwich",
+            "ingredients": ["Bread", "Butter", "Turkey"],
+            "description": "The turkey was unfrozen weeks ago adding a very unique flavor to the mix that you'll get no where else."
+        }
+
+    ],
+    "hot sandwiches": [
+        {
+            "nameOfHotSandwich": "Hot Ham Sandwich",
+            "ingredients": ["Ham", "Mayonaise", "Bread"],
+            "description": "Why eat it cold when you can microwave it and eat it hot. This Hot Ham Sandwich will leave you wanting more."
+        },
+        {
+            "nameOfHotSandwich": "Hot Peanut Butter and Jelly",
+            "ingredients": ["Peanut Butter", "Jelly", "Bread"],
+            "description": "Heating up a cold PB&J sandwich to extreme temperatures excites the flavors and creates new tastes."
+        },
+        {
+            "nameOfHotSandwich": "Hot Turkey Sandwich",
+            "ingredients": ["Bread", "Butter", "Turkey"],
+            "description": "Hot Turkey is cooked to a nice temp of 200 degrees. Keep water close by because you'll need it to cool your tongue."
+        }
+
+    ],
+    "desserts": [
+        {
+            "nameOfDessert": "Chocolate Pie",
+            "ingredients": ["Pie Crust", "Chocolate", "Sugar"],
+            "description": "Classic Chocolate pie freshly unfrozen from the freezer. If not fully unfrozen, then wait 20 minutes and it'll be good."
+        },
+        {
+            "nameOfDessert": "Pumpkin Pie",
+            "ingredients": ["Pumpkin mix", "Pie Crust", "Cinnamon"],
+            "description": "This pumpkin pie is to die for. Literally 3 people have already died from it."
+        },
+        {
+            "nameOfDessert": "Sherbert",
+            "ingredients": ["Sugar", "More Sugar", "Red 5"],
+            "description": "Kids love it and so do Adults and yet it's still not ice cream."
+        }
+
+    ],
+    "drinks": [
+        {
+            "nameOfDrink": "Vodka Pink Lemonade",
+            "ingredients": ["Vodka", "Pink Lemonade", "Water"],
+            "description": "This is a poor man's drink but the lemonade covers up the bitter taste of vodka."
+        },
+        {
+            "nameOfDrink": "Milk",
+            "ingredients": ["Milk", "Sugar"],
+            "description": "Milk straight from the cow out back. We added a little sugar to add a bit of sweetness to it."
+        },
+        {
+            "nameOfDrink": "Dr. Pepper",
+            "ingredients": ["Sugar", "Fructose Syrup", "23 Mystery Ingredients"],
+            "description": "The Doctor is in and he's prescribing Dr. Pepper. It'll shine up old pennies and also taste good while doing it."
+        }
+
+    ]
+}

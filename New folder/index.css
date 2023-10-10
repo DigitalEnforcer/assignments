@@ -1,0 +1,12 @@
+
+.hello {
+    background-color:yellow;
+    height: 30px;
+    border-color:red;
+    color: blue;
+}
+
+.why {
+    background-color: blue;
+    border: 1vb, dotted, black;
+}
