@@ -1,5 +1,5 @@
 const xhr = new XMLHttpRequest()
-        // method  // url                     // async?
+        // method  // url                     // async
 xhr.open("GET", "https://api.vschool.io/pokemon", true)
 xhr.send()
 
@@ -11,11 +11,13 @@ xhr.onreadystatechange = function(){
     } 
 }
 
-
 function showData(arr){
     for(let i = 0; i < arr.length; i++){
         const h1 = document.createElement('h1')
         h1.textContent = arr[i].name
         document.body.appendChild(h1)
+        const details = document.createElement('p')
+        details.textContent = arr[i].resource_uri
+        h1.appendChild(details)
     }
 }

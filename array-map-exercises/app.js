@@ -1,12 +1,14 @@
- /*Example 1: Double the numbers in the array
+//Example 1: Double the numbers in the array
 
+/*
 const numbers = [3, 15, 192]
 const double = numbers.map(numbers => numbers * 2)
 console.log(double)
 */
 
-/* Example 2: Stringify
+//Example 2: Stringify
 
+/*
 const numbers = [11, 23, 35, 43, 56, 62, 98, 190, 399]
 const stringOfNumbers = numbers.map(function(numbers){
     return numbers.toString()
@@ -14,8 +16,9 @@ const stringOfNumbers = numbers.map(function(numbers){
 console.log(stringOfNumbers)
 */
 
-/* Example 3: Capitalize first letter and lowercase the rest
+// Example 3: Capitalize first letter and lowercase the rest
 
+/*
 const arr = ["ArrOn", "toMmy", "WiLBUR", "PoPpy"]
 const correctNames = arr.map(function(arr){
     arr = arr.toLowerCase()
@@ -26,8 +29,9 @@ console.log (arr)
 console.log (correctNames)
 */
 
-/* Example 4: Make and array of strings of names
+// Example 4: Make and array of strings of names
 
+/*
 const peopleInfo = [
         {
             name: "Angelina Jolie",
@@ -56,8 +60,9 @@ console.log(peopleInfo)
 console.log(namesOnly)
 */
 
-/* Example 5: Make an array of strings of the names saying whether or not they can go to The Matrix
+// Example 5: Make an array of strings of the names saying whether or not they can go to The Matrix
 
+/*
 const peopleInfo = [
     {
         name: "Angelina Jolie",
@@ -92,8 +97,9 @@ const namesOnly = peopleInfo.map(function(peopleInfo){
 console.log(namesOnly)
 */
 
-/* Example 6: Make an array of the names in h1s, and the ages in h2s
+// Example 6: Make an array of the names in h1s, and the ages in h2s
 
+/*
 const peopleInfo = [
     {
         name: "Angelina Jolie",

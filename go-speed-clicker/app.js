@@ -14,7 +14,7 @@ console.log("previousTotal = " + previousTotal)
 
 
 const btn2 = document.getElementById("clicker")
-btn2.addEventListener('click', function(){
+btn2.addEventListener('click', ()=>{
     if (countdown >= 0){
         totalClicks += 1
         let finalClicks = totalClicks + Number(previousTotal)
@@ -35,7 +35,7 @@ setTimeout(stopTime,  11000)
 
 
 const btn = document.getElementById("button")
-btn.addEventListener("click", function(){
+btn.addEventListener("click", ()=>{
     localStorage.removeItem("clicks")
     finalClicks = 0;
     totalClicks = 0;
