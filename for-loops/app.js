@@ -105,7 +105,7 @@ console.log (occupationArray)
 
 
 // Color controls
-
+*/
 var purpleBtn = document.getElementById("purple")
 var greenBtn = document.getElementById("green")
 var blueBtn = document.getElementById("blue")
@@ -135,7 +135,7 @@ redBtn.addEventListener("click", function() {
 whiteBtn.addEventListener("click", function() {
     document.body.style.backgroundColor = "white"
 })
-
+/*
 // Count controls
 var count = 0;
 var subtractBtn = document.getElementById("subtract")
@@ -160,7 +160,7 @@ var result = document.getElementsByClassName("hello")
 result[0].innerHTML = "Hello People"
 
 console.log(result[0])
-*/
+
 
 var eventsAtWork = ["work", "pretend to work", "party", "work", "meeting", "party", "daily grind", "work", "party"]
 for (var i = 0; i <= eventsAtWork.length; i++){
@@ -168,3 +168,4 @@ for (var i = 0; i <= eventsAtWork.length; i++){
         console.log ("it's party time")
     }
 }
+*/
