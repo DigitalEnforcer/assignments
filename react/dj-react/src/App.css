@@ -1,0 +1,25 @@
+.box {
+  border: solid 2px red;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  display: inline-block;
+  border-radius: 100px;
+  
+}
+
+.boxes {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.buttons {
+  width: 406px;
+}
+
+main {
+  width: 400px;
+  margin: auto;
+  
+  
+}

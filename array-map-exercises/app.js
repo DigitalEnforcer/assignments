@@ -1,10 +1,10 @@
 //Example 1: Double the numbers in the array
 
-/*
+
 const numbers = [3, 15, 192]
 const double = numbers.map(numbers => numbers * 2)
 console.log(double)
-*/
+
 
 //Example 2: Stringify
 

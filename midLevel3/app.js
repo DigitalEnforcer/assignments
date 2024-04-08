@@ -1,5 +1,5 @@
 
-
+/*
 //Challenge 1
 function solution(arr){
     const otherArr = []                     //creating a separate array for the other numbers besides -1
@@ -35,7 +35,7 @@ console.log(solution([100, -1, 50, -1, 75]))
 
 
 
-/*
+
 
 // Challenge 2
 
@@ -58,3 +58,20 @@ console.log(solution([100, -1, 50, -1, 75]))
  console.log(countVowels(input));
 
  */
+
+ function findSumOfTwo(numbers, target) {
+    for (let i = 0; i < numbers.length; i++) { //go through entire array
+      for (let j = i + 1; j < numbers.length; j++) { // go through entire array +1 next number
+        if (numbers[i] + numbers[j] === target) { // adding the first and second number together
+          return [numbers[i], numbers[j]];
+        }
+      }
+    }
+  
+    return [];
+  }
+
+  console.log(findSumOfTwo([2, 4, 7, 11, 15], 9)); // Output: [2, 7]
+
+console.log(findSumOfTwo([5, 12, 3, 9, 1], 8)); // Output: [3, 5]
+

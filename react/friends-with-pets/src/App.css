@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color:rgb(164, 164, 164);
+}
+
+.fullCard {
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+}
+
+.friendCard {
+    margin: auto;
+    background-color: rgb(255, 255, 120);
+    border: solid 2px;
+    width: 400px;
+    border-radius: 25px;
+    
+}
+
+.nameAge {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.petsBreeds {
+    margin: 0px 20px;
+}
+
+.petCard {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}

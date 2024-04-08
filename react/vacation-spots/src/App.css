@@ -1,0 +1,38 @@
+.vacationSpot {
+    display: flex;
+    margin: 25px;
+    
+}
+
+.vacationCard {
+    display: flex;
+    margin: 10px;
+}
+
+.card-image{
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    
+}
+
+.borderImg {
+    height: 200px;
+    width: 150px;
+}
+
+.information {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 200px;
+    margin: 20px 20px 20px 0px;
+    border-radius: 25px;
+    text-align: center;
+    
+    
+}
+
+.money {
+    font-size: 25px;
+    font-weight: 700;
+}
