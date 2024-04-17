@@ -1,15 +1,26 @@
 import React from "react";
-import memeData from "./memeData";
+import MemeCollection from "./MemeCollection";
+import { v4 as uuidv4 } from 'uuid';
+import axios from 'axios';
 
 export default function Meme(){
-  //  const [memeImage, setMemeImage] = React.useState()
     const [meme, setMeme] = React.useState({
         topText: "",
         bottomText: "",
-        randomImage: ""
+        randomImage: "",
+        id:""
     })
     
-    const [allMemeImages, setAllMemeImages] = React.useState(memeData)
+    const [allMemeImages, setAllMemeImages] = React.useState({})
+    const [memeList, setMemeList] = React.useState([])
+
+
+    React.useEffect(() =>{
+        axios.get("https://api.imgflip.com/get_memes")
+            .then(data => setAllMemeImages(data.data))
+            .catch(error => console.log(error))
+            
+    }, [] )
 
     function randomMeme(){
         const randomElement = allMemeImages.data.memes[Math.floor(Math.random() * allMemeImages.data.memes.length)]
@@ -19,6 +30,18 @@ export default function Meme(){
             randomImage: randomMeme
         }))
     }
+
+    function saveMeme (){
+        setMeme (prevMeme => ({
+            ...prevMeme,
+            id: uuidv4()
+        }))
+        setMemeList(prevMemeList => ([
+            ...prevMemeList, meme
+        ]))
+        setMeme (prevMeme => ({...prevMeme, topText:"", bottomText:""}))
+    }
+
     function handleChange (event){
         const {name, value} = event.target
         setMeme(prevMeme => {
@@ -49,16 +72,22 @@ export default function Meme(){
                     value={meme.bottomText}
                 />
                 <button className="form-button" onClick={randomMeme}>Get a new meme image 🖼</button>
+                <button className="form-button" onClick={saveMeme}>Save Your Meme!</button>
             </div>
             <div className="memeImageContainer">
                 <img src={meme.randomImage} className ="meme--image"/>
                 <h2 className="meme--text top">{meme.topText}</h2>
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>
+            <div className="savedMemesLabel">Saved Memes Below:</div>
+            <MemeCollection memeList={memeList} setMemeList={setMemeList}/>
         </main>
     )
 }
  
+//create a memeList for all the saved memes **
+//create component to pull up memes via props and .map
+//create buttons to save a meme and add it to the memeList **
 
 /*
 1.

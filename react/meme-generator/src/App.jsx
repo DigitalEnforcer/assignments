@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Nav from './Nav'
 import Meme from './Meme'
+import Footer from './Footer'
 import './App.css'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <>
       <Nav />
       <Meme />
-      
+      <Footer />
     </>
   )
 }
