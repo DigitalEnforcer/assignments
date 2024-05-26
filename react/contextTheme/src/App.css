@@ -1,0 +1,60 @@
+body {
+  margin:0px;
+  background-color: rgb(80, 80, 80);
+}
+
+.light-mode {
+  background: linear-gradient(180deg, #ffffff , #70a4c7);
+}
+
+.light-mode h1 {
+  color: rgb(42, 28, 238);
+}
+.light-mode p {
+  color: rgb(13, 112, 38);
+}
+
+.light-mode h3 {
+  color: rgb(174, 0, 255);
+}
+
+.light-mode button {
+  color: rgb(0, 17, 255);
+  background-color: aqua;
+}
+.dark-mode {
+  background-color: rgb(80, 80, 80);
+  color: white;
+  
+}
+.headerLinks {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  border-bottom: 2px solid black;
+
+}
+
+.mainPageContent {
+  width: 500px;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 20px;
+  margin: auto;
+}
+
+.footerInfo {
+  display: flex;
+  justify-content: end;
+  border-top: 2px solid black;
+  padding-right: 30px;
+}
+
+.modeButton {
+  display:flex;
+  justify-content: center;
+  margin: auto;
+  width: 500px;
+  
+}
+
