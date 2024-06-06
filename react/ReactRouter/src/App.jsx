@@ -1,5 +1,5 @@
-import React from 'react'
-import Gradient from './Gradient'
+import { useState } from 'react'
+
 import './App.css'
 
 function App() {
@@ -7,8 +7,6 @@ function App() {
 
   return (
     <>
-    
-      <Gradient />
     </>
   )
 }
