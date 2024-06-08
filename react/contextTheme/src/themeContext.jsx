@@ -10,8 +10,8 @@ function ThemeContextProvider(props){
 
   return (
     <ThemeContext.Provider value={{
-        mode: mode,
-        toggleTheme: toggleTheme
+        mode,
+        toggleTheme
     }}>
         <div className={`${mode}-mode`}>
             {props.children}
