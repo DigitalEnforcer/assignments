@@ -1,0 +1,641 @@
+
+@media (max-width: 599px){  
+   
+    body {
+        margin: 0;
+        background:linear-gradient(90deg, #dfd157 , #c98f11);
+    }
+    .mainBody {
+        margin: auto;
+        width: 400px;
+        padding-top: 100px;
+        text-align: center;
+    }
+    .title {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    }
+    
+    nav {
+        position: fixed;
+        display: flex;
+        z-index: +1;
+        width: 100vw;
+        background:linear-gradient(90deg, #3f5783 , #000000);
+        height: 100px;
+        font-size: 30px;
+        font-style:italic;
+        border-bottom: #000000 solid 4px;
+        padding: 0px;
+        
+    }
+    .nav-link {
+        text-decoration: none;
+        margin: auto;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 2px black;
+    }
+
+    .playButton {
+        position: fixed;
+        margin-top: 0px;
+    
+    }
+    .HarryPotterCharacterTemplate {
+        width: 250px;
+        margin: auto;
+        margin-top: 100px;
+        
+    }
+
+    .characterDescription {
+        width: 250px;
+        margin: auto;
+        height: 275px;
+        background-position: center;
+        background-size: cover;
+        margin-top: 140px;
+        
+    }
+
+    .characterDescriptionCard {
+        background: linear-gradient(180deg, #cccccc , #000000);
+        color: white;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5), -2px -2px 3px rgba(14, 69, 223, 0.5);
+        display: flex;
+        margin: auto;
+        width: 600px;
+        border-radius: 150px;
+        box-shadow: 5px 5px 10px black;
+        
+    }
+
+    .characterImage {
+        border-radius:200px;
+        border: 2px solid rgb(255, 255, 255);
+        padding-left: 20px;
+        /* border: solid black 1px; */
+        background: linear-gradient(270deg, #ffffff , #962807);
+        box-shadow: 5px 5px 10px black;
+        transition: 0.15s;
+    }
+
+    .characterImage:hover{
+        box-shadow: 10px 10px 20px rgb(255, 217, 0);
+    }
+
+    .characterName {
+        /* border: solid black 2px; */
+        text-align: center;
+        color: white;
+        
+        text-shadow: 2px 2px 4px black;
+    }
+    .houseImages {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    .houseImages img {
+        width: 330px;
+        margin-top: 110px;
+        margin-left: 130px;
+        
+    }
+
+
+    .houseNameGryffindor {
+        text-align: center;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px black;
+        
+    }
+
+    .houseNameHufflepuff {
+        text-align: center;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px black;
+    }
+    .houseNameRavenclaw {
+        text-align: center;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px black;
+        
+    }
+    .houseNameSlytherin {
+        text-align: center;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px black;
+        
+    }
+
+    .allCharacters {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 10px;
+    }
+
+
+
+    .characterDescriptionCard button {
+        width: 75px;
+        height: 50px;
+        margin: auto;
+    }
+
+    .bookOfSpells {
+        position: fixed;
+        z-index: +1;
+        background:linear-gradient(90deg, #3f5783 , #000000);
+        border-radius: 20px;
+        width: 500px;
+        border: 2px solid black;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+        font-size: 60px;
+        
+    }
+    .allSpells {
+        margin-top: 80px;
+    }
+    .everything {
+        margin: auto;
+        width: 500px;
+        padding-top: 101px;
+        
+    }
+
+    @keyframes rotate-color1 {
+        0% { transform: rotate(0deg); color: rgb(133, 133, 133); }
+        20% { transform: rotate(15deg); color: rgb(111, 230, 0); }
+        50% { transform: rotate(-30deg); color: rgb(146, 0, 230); }
+        80% { transform: rotate(15deg); color: rgb(111, 230, 0); }
+        100% { transform: rotate(0deg); color: rgb(133, 133, 133); }
+    }
+
+    @keyframes rotate-color2 {
+        0% { transform: rotate(0deg); color: rgb(133, 133, 133); }
+        20% { transform: rotate(-15deg); color: rgb(0, 92, 230); }
+        50% { transform: rotate(30deg); color: rgb(111, 230, 0); }
+        80% { transform: rotate(-15deg); color: rgb(0, 92, 230); }
+        100% { transform: rotate(0deg); color: rgb(133, 133, 133); }
+    }
+
+    @keyframes rotate-color3 {
+        0% { transform: rotate(0deg); color: rgb(133, 133, 133); }
+        20% { transform: rotate(15deg); color: #962807; }
+        50% { transform: rotate(-30deg); color: rgb(0, 92, 230); }
+        80% { transform: rotate(15deg); color: #962807; }
+        100% { transform: rotate(0deg); color: rgb(133, 133, 133); }
+    }
+
+    @keyframes rotate-color4 {
+        0% { transform: rotate(0deg); color: rgb(133, 133, 133); }
+        20% { transform: rotate(-15deg); color: rgb(146, 0, 230); }
+        50% { transform: rotate(30deg); color: rgb(238, 5, 5); }
+        80% { transform: rotate(-15deg); color: rgb(146, 0, 230); }
+        100% { transform: rotate(0deg); color: rgb(133, 133, 133); }
+    }
+    @keyframes rotate-color5 {
+        0% { transform: rotate(-2deg); color: rgb(133, 133, 133); }
+        20% { transform: rotate(4deg); color: rgb(94, 255, 0); }
+        50% { transform: rotate(-3deg); color: rgb(255, 0, 0); }
+        80% { transform: rotate(2deg); color: rgb(0, 60, 255); }
+        100% { transform: rotate(-3deg); color: rgb(133, 133, 133); }
+    }
+    .wave-spell1 {
+        display: inline-block;
+        animation: rotate-color1 6s infinite; /* Adjust the duration as needed */
+    }
+
+    .wave-spell2 {
+        display: inline-block;
+        animation: rotate-color2 5.2s infinite; /* Adjust the duration as needed */
+    }
+
+    .wave-spell3 {
+        display: inline-block;
+        animation: rotate-color3 5s infinite; /* Adjust the duration as needed */
+    }
+
+    .wave-spell4 {
+        display: inline-block;
+        animation: rotate-color4 4.8s infinite; /* Adjust the duration as needed */
+    }
+    .houseCrest img{
+        animation: moveCrest 4s infinite;
+    }
+
+    @keyframes moveCrest {
+        0% { transform: rotate(0deg) scale(1) }
+        20% { transform: rotate(2deg)  }
+        50% { transform: rotate(-2deg) scale(1.03) }
+        80% { transform: rotate(2deg) }
+        100% { transform: rotate(0deg) scale(1) }
+    }
+
+
+    .spellItem {
+        margin: auto;
+        width: 404px;
+        text-align: center;
+        margin-bottom: 10px;
+        background:linear-gradient(90deg, #00000000 , #0e3a7496);
+        
+        color: white;
+        border-radius: 20px;
+        
+    }
+
+    .spellName {
+        z-index: 1;
+        font-size: 35px;
+        font-weight: bolder;
+        animation: rotate-color5 4.8s infinite;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .spellEffect {
+        text-shadow: 2px 2px 4px black;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .leftDoor {
+        left: 0;
+        top: 50%;
+        transform: translate(-80%, 0%);
+        transition: left 0.5s ease;
+        
+    }
+
+    .rightDoor {
+        right: 0;
+        top: 50%;
+        transform: translate(-140%, 0%);
+        transition: right 0.5s ease;
+    }
+
+    .dumbledore {
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-130%, 0%);
+    }
+
+    .leftDoor, .rightDoor, .dumbledore {
+        position: absolute;
+        width: 200px; 
+        height: 50px; 
+        
+    }
+    .frontDoor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+
+
+    .rightDoor:hover {
+        right: -100px;
+    }
+}
+
+@media (min-width: 600px){
+    body {
+        margin: 0;
+        background:linear-gradient(90deg, #dfd157 , #c98f11);
+    }
+    .mainBody {
+        margin: auto;
+        width: 700px;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 1px 1px 2px rgb(255, 255, 255);
+        
+    }
+    nav {
+        position: fixed;
+        z-index: +1;
+        width: 100vw;
+        background:linear-gradient(90deg, #3f5783 , #000000);
+        height: 50px;
+        font-size: 30px;
+        font-style:italic;
+        border-bottom: #000000 solid 4px;
+        text-align: center;
+        padding: 10px;
+        
+    }
+    .nav-link {
+        text-decoration: none;
+        padding: 20px;
+        text-align: center;
+        margin: 20px;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 2px black;
+    }
+
+    .playButton {
+        position: fixed;
+        margin-top: 30px;
+    }
+    .HarryPotterCharacterTemplate {
+        
+        width: 250px;
+        margin: auto;
+        margin-top: 70px;
+        
+        
+        
+    }
+
+    .characterDescription {
+        width: 250px;
+        margin: auto;
+        height: 275px;
+        background-position: center;
+        background-size: cover;
+        margin-top: 105px;
+        
+    }
+
+    .characterDescriptionCard {
+        background: linear-gradient(180deg, #cccccc , #000000);
+        color: white;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5), -2px -2px 3px rgba(14, 69, 223, 0.5);
+        display: flex;
+        margin: auto;
+        padding: 50px;
+        width: 600px;
+        border-radius: 150px;
+        box-shadow: 5px 5px 10px black;
+        
+    }
+
+    .characterImage {
+        border-radius:200px;
+        border: 2px solid rgb(255, 255, 255);
+        padding-left: 20px;
+        /* border: solid black 1px; */
+        background: linear-gradient(270deg, #ffffff , #962807);
+        box-shadow: 5px 5px 10px black;
+        transition: 0.15s;
+    }
+
+    .characterImage:hover{
+        box-shadow: 10px 10px 20px rgb(255, 217, 0);
+    }
+
+    .characterName {
+        /* border: solid black 2px; */
+        text-align: center;
+        color: white;
+        
+        text-shadow: 2px 2px 4px black;
+    }
+    .houseImages {
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        width: 900px;
+        gap: 20px;
+        padding-top: 80px;
+        padding-left: 70px;
+    }
+
+    .houseImages img {
+        align-items: center;
+        width: 400px;
+        height: 400px;
+        
+    }
+
+
+    .houseNameGryffindor {
+        position: fixed;
+        padding-left: 140px;
+        padding-top: 165px;
+        width: 250px;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        
+    }
+
+    .houseNameHufflepuff {
+        position: fixed;
+        padding-left: 565px;
+        padding-top: 165px;
+        width: 250px;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+    }
+    .houseNameRavenclaw {
+        position: fixed;
+        padding-left: 140px;
+        padding-top: 600px;
+        width: 250px;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        
+    }
+    .houseNameSlytherin {
+        position: fixed;
+        padding-left: 565px;
+        padding-top: 580px;
+        width: 250px;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        
+    }
+
+    .allCharacters {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 10px;
+    }
+
+
+
+    .characterDescriptionCard button {
+        width: 75px;
+        height: 50px;
+        margin: auto;
+    }
+
+    .bookOfSpells {
+        position: fixed;
+        z-index: +1;
+        background:linear-gradient(90deg, #3f5783 , #000000);
+        border-radius: 20px;
+        width: 500px;
+        border: 2px solid black;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+        font-size: 60px;
+        
+    }
+    .allSpells {
+        margin-top: 80px;
+    }
+    .everything {
+        margin: auto;
+        width: 500px;
+        padding-top: 70px;
+        
+    }
+
+    @keyframes rotate-color1 {
+        0% { transform: rotate(0deg); color: rgb(231, 13, 13); }
+        20% { transform: rotate(15deg); color: rgb(111, 230, 0); }
+        50% { transform: rotate(-30deg); color: rgb(146, 0, 230); }
+        80% { transform: rotate(15deg); color: rgb(111, 230, 0); }
+        100% { transform: rotate(0deg); color: rgb(226, 36, 36); }
+    }
+
+    @keyframes rotate-color2 {
+        0% { transform: rotate(0deg); color: rgb(199, 181, 181); }
+        20% { transform: rotate(-15deg); color: rgb(0, 92, 230); }
+        50% { transform: rotate(30deg); color: rgb(111, 230, 0); }
+        80% { transform: rotate(-15deg); color: rgb(0, 92, 230); }
+        100% { transform: rotate(0deg); color: rgb(210, 223, 32); }
+    }
+
+    @keyframes rotate-color3 {
+        0% { transform: rotate(0deg); color: rgb(133, 133, 133); }
+        20% { transform: rotate(15deg); color: #c7360a; }
+        50% { transform: rotate(-30deg); color: rgb(0, 92, 230); }
+        80% { transform: rotate(15deg); color: #e43e0b; }
+        100% { transform: rotate(0deg); color: rgb(133, 133, 133); }
+    }
+
+    @keyframes rotate-color4 {
+        0% { transform: rotate(0deg); color: rgb(133, 133, 133); }
+        20% { transform: rotate(-15deg); color: rgb(146, 0, 230); }
+        50% { transform: rotate(30deg); color: rgb(238, 5, 5); }
+        80% { transform: rotate(-15deg); color: rgb(146, 0, 230); }
+        100% { transform: rotate(0deg); color: rgb(133, 133, 133); }
+    }
+    @keyframes rotate-color5 {
+        0% { transform: rotate(-2deg); color: rgb(133, 133, 133); }
+        20% { transform: rotate(4deg); color: rgb(94, 255, 0); }
+        50% { transform: rotate(-3deg); color: rgb(255, 0, 0); }
+        80% { transform: rotate(2deg); color: rgb(0, 60, 255); }
+        100% { transform: rotate(-3deg); color: rgb(133, 133, 133); }
+    }
+    .wave-spell1 {
+        display: inline-block;
+        animation: rotate-color1 6s infinite; /* Adjust the duration as needed */
+    }
+
+    .wave-spell2 {
+        display: inline-block;
+        animation: rotate-color2 5.2s infinite; /* Adjust the duration as needed */
+    }
+
+    .wave-spell3 {
+        display: inline-block;
+        animation: rotate-color3 5s infinite; /* Adjust the duration as needed */
+    }
+
+    .wave-spell4 {
+        display: inline-block;
+        animation: rotate-color4 4.8s infinite; /* Adjust the duration as needed */
+    }
+    .houseCrest img{
+        animation: moveCrest 4s infinite;
+    }
+
+    @keyframes moveCrest {
+        0% { transform: rotate(0deg) scale(1) }
+        20% { transform: rotate(2deg)  }
+        50% { transform: rotate(-2deg) scale(1.03) }
+        80% { transform: rotate(2deg) }
+        100% { transform: rotate(0deg) scale(1) }
+    }
+
+
+    .spellItem {
+        margin: auto;
+        width: 404px;
+        text-align: center;
+        margin-bottom: 10px;
+        background:linear-gradient(90deg, #00000000 , #0e3a7496);
+        
+        color: white;
+        border-radius: 20px;
+        
+    }
+
+    .spellName {
+        z-index: 1;
+        font-size: 35px;
+        font-weight: bolder;
+        animation: rotate-color5 4.8s infinite;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .spellEffect {
+        text-shadow: 2px 2px 4px black;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .leftDoor {
+        left: 0;
+        top: 50%;
+        transform: translate(-8%, 0%);
+        transition: left 0.5s ease;
+        
+    }
+
+    .rightDoor {
+        right: 0;
+        top: 50%;
+        transform: translate(-67%, 0%);
+        transition: right 0.5s ease;
+    }
+
+    .dumbledore {
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-60%, 0%);
+    }
+
+    .leftDoor, .rightDoor, .dumbledore {
+        position: absolute;
+        width: 200px; 
+        height: 50px; 
+        
+    }
+    .frontDoor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+
+
+    .rightDoor:hover {
+        right: -100px;
+    } 
+
+}
