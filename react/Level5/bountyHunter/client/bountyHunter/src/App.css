@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.bounty-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px;
+    
+}
+
+.bounty{
+    background-color: #f3efef;
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 1px;
+    border-radius: 20px;
+    
+}
+
+.delete-btn {
+    background-color: rgb(146, 64, 64);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.edit-btn {
+    background-color: yellowgreen;
+    padding: 10px;
+    margin: 5px;
+    
+}
+
+.close-btn {
+    background-color: rgb(50, 135, 205);
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    border-radius: 15px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    border-radius: 25px;
+    background-color: #464646;
+    padding: 10px;
+    
+}
+
+input {
+    padding: 10px;
+    margin: 6px;
+    border-radius: 10px;
+    
+}
+
+form button {
+    width: 100px;
+    margin: auto;
+    height: 50px;
+    border-radius: 15px;
+    background-color: aqua;
+
+}
+
+form label {
+    color: white;
+    width: 200px;
+    margin: auto;
+}
+
+.bounty_Amount_Label {
+    width: 75px;
+}
