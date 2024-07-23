@@ -104,3 +104,8 @@
 
 
     #https://http.cat
+
+# dotenv
+ npm install dotenv
+# Mongoose
+ npm install mongoose

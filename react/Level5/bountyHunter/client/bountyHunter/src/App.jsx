@@ -41,6 +41,8 @@ function App() {
       <div className ="bounty-container">
         <AddBountyForm 
           submit = {addBounty}
+          isEditing ={false}
+          handleToggle={null}
         />
 
         {bounties.map(bounty =>
@@ -50,6 +52,7 @@ function App() {
             key={bounty._id}
             deleteBounty = {deleteBounty}
             editBounty = {editBounty}
+
             
             />
         )}

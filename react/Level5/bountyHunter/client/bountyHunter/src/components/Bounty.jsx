@@ -5,6 +5,9 @@ export default function Bounty(props){
     const { firstName, lastName, living, bounty_Amount, type, _id} = props
     const [ editToggle, setEditToggle] = useState(false)
     // console.log(living)
+    function handleToggle(){
+            setEditToggle(false)
+    }
     return (
         <div className="bounty">
             { !editToggle ?
@@ -35,6 +38,8 @@ export default function Bounty(props){
                     type={type}
                     submit={props.editBounty}//
                     _id={_id}
+                    isEditing={true}
+                    handleToggle={handleToggle}
                 />
                 <button className="close-btn"
                     onClick={() => setEditToggle(prevToggle => !prevToggle)}>

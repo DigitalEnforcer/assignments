@@ -1,35 +1,32 @@
 const express = require("express")
-const mongoose = require("mongoose")
 const app = express()
 const morgan = require('morgan')
-const {v4: uuidv4} = require("uuid")
 require('dotenv').config()
+const mongoose = require('mongoose')
 
 app.use(express.json())
 app.use(morgan('dev'))
+
+
 
 async function connectToDb(){
     try {
         await mongoose.connect(process.env.MONGO_URI)
         console.log('Connected to DB')
-    } catch (error) {
-        console.log(error)
+    } catch (err) {
+        console.log(err)
     }
 }
 
 connectToDb()
 
-//Routes
-app.use("/api/bounties", require("./routes/bountyRouter.js"))
+app.use('/inventory', require('./routes/inventory'))
 
-// Error Handler
 app.use((err, req, res, next) => {
     console.log(err)
     return res.send({errMsg: err.message})
 })
 
-//Server listen 
-app.listen(9000, () => {
-    console.log("The server is running on port 9000")
+app.listen(9000, ()=>{
+    console.log("The Server is running")
 })
-

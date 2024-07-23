@@ -4,7 +4,7 @@ export default function AddBountyForm(props){
     const initInputs = {
         firstName: props.firstName || "",
         lastName: props.lastName || "",
-        living: props.living || true,
+        living: props.living || false,
         bounty_Amount: props.bounty_Amount || 0,
         type: props.type || "",
     }
@@ -19,9 +19,10 @@ export default function AddBountyForm(props){
     function handleSubmit (e){
         e.preventDefault()
         props.submit(inputs, props._id)
-        setInputs(initInputs)
+        !props.isEditing && setInputs(initInputs)
+        props.handleToggle && props.handleToggle()
     }
-
+console.log(inputs)
     return (
         <form onSubmit={handleSubmit}>
             <input
@@ -43,7 +44,7 @@ export default function AddBountyForm(props){
                 <input
                     type="checkbox"
                     name="living"
-                    value={inputs.living}
+                    checked={inputs.living}
                     onChange={handleChange}
                      
                 />
