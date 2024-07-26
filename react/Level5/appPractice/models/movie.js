@@ -8,11 +8,15 @@ const movieSchema = new Schema({
         unique: true
     },
     description: {
-        type: String,
-        required: true
+        type: String
+        
     },
     genre: {
         type: String
+    },
+    author: {
+        type: Schema.Types.ObjectId,
+        ref: "Director"
     }
 })
 
