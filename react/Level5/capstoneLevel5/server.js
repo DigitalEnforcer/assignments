@@ -25,7 +25,10 @@ connectToDb()
 
 
 // Routes //
-
+app.use("/api/goals", require("./routes/goalsRouter"))
+app.use("/api/journals", require("./routes/journalRouter"))
+app.use("/api/reminders", require("./routes/reminderRouter"))
+app.use("/api/websites", require("./routes/websitesRouter"))
 
 
 // Error Handler //
