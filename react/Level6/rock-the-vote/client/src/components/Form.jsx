@@ -6,7 +6,7 @@ function Form(props) {
 
     const [formData, setFormData] = useState(initState)
 
-    const {isMember, submit} = props
+    const {isMember, submit, errMsg} = props
 
     function handleChange(e){
         const {name, value} = e.target
@@ -25,7 +25,7 @@ function Form(props) {
 
     return ( 
      
-            <form name = 'auth-form' id = 'auth-form' onSubmit={handleSubmit}>
+            <form className = 'auth-form' id = 'auth-form'  onSubmit={handleSubmit}>
 
                 <h2>Welcome to RTV!</h2>
                 <input 
@@ -41,7 +41,7 @@ function Form(props) {
                     onChange={handleChange}
                 />
                 <button>{isMember ? "Login" : "Signup"}</button>
-
+                <p style ={{color: "red"}}>{errMsg}</p>
             </form>
        
      );

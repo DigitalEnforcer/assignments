@@ -9,11 +9,11 @@ export default function IssueList(props){
             <Issue {...issue} key={issue._id}/>
         )
     })
-console.log(issueElements)
+//console.log(issueElements)
     return(
 
-        <div>
-            {issueElements}
+        <div className = "issue-Container">
+            {issueElements.reverse()}
         </div>
     )
 }

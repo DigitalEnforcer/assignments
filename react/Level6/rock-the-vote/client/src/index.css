@@ -1,12 +1,12 @@
 * {
-  box-sizing: border-box;
+  
   margin: 0;
 }
 
 #app {
   height: 100vh;
   width: 100vw;
-  background-color: rgb(248, 248, 245);
+  background-color: rgb(255, 255, 255);
 }
 
 #navbar {
@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
   gap: 50px;
-  background-color: aliceblue;
+  background-color: #baccdf;
   border: 1px solid darkgray;
 }
 
@@ -27,10 +27,10 @@
   height: 100vh;
   width: 100vw;
   padding-top: 50px;
- 
 }
 
 #auth-form {
+  background-color: #3e93d8;
   height: 40vh;
   width: 40vw;
   display: flex;
@@ -38,17 +38,199 @@
   align-items: center;
   justify-content: center;
   gap: 50px;
-  border: 1px solid black;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 25px;
   margin: 25px;
-}
+} 
 
 #auth-form > input {
   width: 300px;
   height: 40px;
   padding: 10px;
-}
+}  
 
 button {
   height: 40px;
   width: 150px;
+}
+
+/* .container {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto
+}
+
+.issue-Container {
+  border: 10px solid black;} */
+
+
+.all {
+  background-color: blue;
+}
+
+.container {
+  background-color: #cee2f7;  /* Light blue background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+  color: #333;  /* Dark grey text color */
+  max-width: 600px;  /* Limit width */
+  margin: 10px auto;  /* Center container */
+}
+
+/* .container button {
+  height: 40px;
+  width: 100px;
+} */
+
+.container h1 {
+  color: #3b66a5;  /* Light blue headings */
+}
+
+.container h4 {
+  color: #464646;  /* Darker grey for description */
+}
+
+.issue-image {
+  height: 100px;
+  width: 100px;
+  margin-top: 5px;
+  border-radius: 50%;  /* Rounded image */
+  border: 2px solid #4a6ea575;  /* Border matches heading color */
+}
+
+.vote-container {
+  margin-top: 10px;
+}
+
+.upvote-button, .downvote-button {
+  height: 40px;
+  width: 100px;
+  background-color: #4a6fa5;  /* Light blue for upvote button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.downvote-button {
+  background-color: #8d8d8d;  /* Light grey for downvote button */
+}
+
+.edit-delete-buttons {
+  margin-top: 10px;
+}
+
+.edit-button, .delete-button {
+  height: 40px;
+  width: 100px;
+  background-color: #4a6fa5;  /* Light blue for edit button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.delete-button {
+  background-color: #b45151;  /* Light grey for delete button */
+}
+
+.commentButton {
+  width: 210px;
+  height: 20px;
+  background-color: #3f3f3f;  /* Light blue for edit button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.commentSubmit {
+  width: 150px;
+  height: 20px;
+  background-color: #3e93d8;  /* Light blue for edit button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.commentWindow {
+  height: 120px;
+  width: 200px;
+  margin: 5px;
+}
+
+.commentWindow input {
+  margin: 1px;
+}
+
+.commentWindow textarea{
+  height: 65px;
+  width: 190px;
+  resize: none;  /* Prevents resizing */
+  overflow-wrap: break-word;  /* Ensures text breaks onto new lines */
+  word-wrap: break-word;  /* Compatibility for older browsers */
+  word-break: break-word;  /* For breaking long words */
+  padding: 5px;  /* Adds some padding inside the textarea */
+  border-radius: 5px;  /* Optional: Adds rounded corners */
+  border: 1px solid #ccc;
+}
+
+.commentTemplate {
+  background-color: #e5edf7;  /* Light blue background */
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+  color: #333;  /* Dark grey text color */
+  max-width: 600px;  /* Limit width */
+  margin: 10px auto;
+}
+
+.commentUser {
+  padding: 5px;
+}
+
+.usersComment {
+  padding: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #b1b3b493;
+  border: 1px solid rgba(0, 0, 0, 0.068);
+  border-radius: 10px;
+}
+
+.userContainer {
+  
+  background-color: #cee2f7;  /* Light blue background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+  color: #333;  /* Dark grey text color */
+  max-width: 600px;  /* Limit width */
+  margin: 10px auto;  /* Center container */
+  height: 220px;
+}
+
+.submitButton {
+  width: 150px;
+  height: 40px;
+  background-color: #3e93d8;  /* Light blue for edit button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 1px;
+  cursor: pointer;
+  margin-top: 10px;
 }

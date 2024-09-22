@@ -33,24 +33,27 @@ export default function IssueForm(props){
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className = "commentWindow" onSubmit={handleSubmit}>
             <input 
                 name="title"
                 value={formData.title}
+                placeholder="title"
                 onChange={handleChange}
             />
             <input
                 name="description"
                 value={formData.description}
+                placeholder="description"
                 onChange={handleChange}
             />
             <input
                 name="imgUrl"
                 value={formData.imgUrl}
+                placeholder="Image link"
                 onChange={handleChange}
             />
 
-            <button>Submit</button>
+            <button className="submitButton">Submit</button>
         </form>
     )
 }

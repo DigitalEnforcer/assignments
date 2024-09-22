@@ -14,8 +14,8 @@ function extractInitials(names) {
 const fullNames = ['John Doe', 'Alice Johnson', 'Bob Smith'];
 const initialsArray = extractInitials(fullNames);
 console.log(initialsArray); // Output: ['JD', 'AJ', 'BS']
-
 */
+
 
 
 /*--------------------------CHATGPT----------------------------------
@@ -41,9 +41,20 @@ function extractInitials(names) {
   const people = [
     { name: 'Alice', age: 30, country: 'USA' },
     { name: 'Bob', age: 25, country: 'Canada' },
-    { name: 'Charlie', age: 35, country: 'USA' },
+    { name: 'Charlie', age: 30, country: 'USA' },
     { name: 'David', age: 28, country: 'Australia' },
   ];
   
-  const filteredByCountry = filterByProperty(people, 'age', 30);
-  console.log(filteredByCountry);
+  const filteredByCountry = filterByProperty(people, 'country', 'USA');
+  // console.log(filteredByCountry);
+
+
+  const capitalizeWords = (str) => {
+    const cap = str.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(" ")
+    return cap
+  }
+
+  const wordsString = "hello david you are almost there!!"
+
+  console.log(capitalizeWords(wordsString))
+  

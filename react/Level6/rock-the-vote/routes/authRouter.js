@@ -35,7 +35,7 @@ authRouter.post('/login', async(req, res, next)=>{
             res.status(403)
             return next(new Error("Incorrect Username or Password"))
         }
-        const token = jwt.sign(user.withoutPassword(), process.env.SECRET)     // creating the token for the newly logged in user
+        const token = jwt.sign(user.withoutPassword(), process.env.SECRET)     // creating the token for the newly logged in user / while also deleting the password
         return res.status(201).send({user: user.withoutPassword(), token})                      // sends back the full user information plus the token
     } catch (error) {
         res.status(500)

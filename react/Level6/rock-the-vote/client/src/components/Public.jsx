@@ -4,18 +4,17 @@ import IssueList from './IssueList';
 
 function Public() {
 
-    const {getAllUserIssues, allIssues} = useContext(UserContext)
+    const {getAllUserIssues, allIssues, getAllComments} = useContext(UserContext)
 
-    
     useEffect(()=> {
         getAllUserIssues()
+        getAllComments()
     }, [])
 
-console.log(getAllUserIssues)
     return ( 
-        <>
+        <div>
             <IssueList issues={allIssues}/>
-        </>
+        </div>
      );
 }
 

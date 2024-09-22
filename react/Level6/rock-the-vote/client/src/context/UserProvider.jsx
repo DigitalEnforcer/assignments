@@ -13,14 +13,18 @@ userAxios.interceptors.request.use(config => {
 
 export default function UserProvider(props){
 
+    
+
     const initState = {
         user: JSON.parse(localStorage.getItem("user")) || {},
         token: localStorage.getItem("token") || "",
-        issues: []
+        issues: [],
+        errMsg: ""
     }
 
     const [userState, setUserState] = useState(initState)
     const [allIssues, setAllIssues] = useState([])
+    const [allComments, setAllComments] = useState([])
 
     async function signup(creds){
         try {
@@ -35,9 +39,9 @@ export default function UserProvider(props){
                     token: token
                 }
             })
-            console.log(res.data)
+            //console.log(res.data)
         } catch (error) {
-            console.log(error)
+            handleAuthErr(error.response.data.errMsg)
         }
     }
 
@@ -54,9 +58,9 @@ export default function UserProvider(props){
                     token: token
                 }
             })
-            console.log(res.data)
+            //console.log(res.data)
         } catch (error) {
-            console.log(error)
+            handleAuthErr(error.response.data.errMsg)
         }
     }
 
@@ -64,6 +68,7 @@ export default function UserProvider(props){
         try {
             localStorage.removeItem("user")
             localStorage.removeItem("token")
+            resetAuthErr()
             setUserState(prevUserState => {
                 return {
                     ...prevUserState,
@@ -76,6 +81,24 @@ export default function UserProvider(props){
         }
     }
     
+    function handleAuthErr(errMsg){
+        setUserState(prevUserState => {
+            return {
+                ...prevUserState,
+                errMsg
+            }
+        })
+    }
+
+    function resetAuthErr(){
+        setUserState(prevUserState => {
+            return {
+                ...prevUserState,
+                errMsg:""
+            }
+        })
+    }
+
     async function getUserIssues(){
         try {
             const res = await userAxios.get('/api/main/issues/user')
@@ -143,8 +166,57 @@ export default function UserProvider(props){
             console.log(error)
         }
     }
+
+    async function handleUpvote(issueId){
+        try {
+            const res = await userAxios.put(`/api/main/issues/upvotes/${issueId}`) //don't need to send anything back
+            console.log(res.data)
+            setAllIssues(prevIssues => prevIssues.map(issue => issue._id === issueId ? res.data : issue))
+            setUserState(prevUserState => {
+                return {
+                    ...prevUserState,
+                    issues: prevUserState.issues.map(issue => issue._id === issueId ? res.data : issue)
+                }
+            })
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    async function handleDownVote(issueId){
+        try {
+            const res = await userAxios.put(`/api/main/issues/downvotes/${issueId}`)
+            setAllIssues(prevIssues => {
+                return prevIssues.map(issue => issue._id === issueId ? res.data : issue)
+            })
+            setUserState(prevUserState => ({
+                ...prevUserState,
+                issues: prevUserState.issues.map(issue => issue._id === issueId ? res.data : issue)
+            }))
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    function getAllComments(){
+        userAxios.get('/api/main/comments')
+        .then(res => setAllComments(res.data))
+        .catch(err => console.log(err))
+    }
+
+    function addComment(id, comment){
+        userAxios.post(`/api/main/comments/${id}`, comment)
+            .then(res => setAllComments(prevAllComments =>{
+                return [
+                    ...prevAllComments,
+                    res.data
+                ]
+            }))
+            .catch(err => console.log(err))
+    }
+
     //create a function for all issues
-    console.log(userState.user)
+    //console.log(userState.user)
     return (
         <UserContext.Provider value ={{
             ...userState, 
@@ -156,6 +228,13 @@ export default function UserProvider(props){
             addIssue,
             deleteIssue,
             editIssue,
+            handleAuthErr,
+            resetAuthErr,
+            handleUpvote,
+            handleDownVote,
+            getAllComments,
+            addComment,
+            allComments,
             allIssues}}>
             {props.children}
         </UserContext.Provider>

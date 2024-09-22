@@ -12,9 +12,9 @@ goalsRouter.get('/', async(req, res, next)=>{
     }
 })
 
-goalsRouter.get('/:id', async (req, res, next)=>{
+goalsRouter.get('/user' /* just changed this from "id"*/ , async (req, res, next)=>{
     try {
-        const foundGoal = await Goals.findById(req.params.id)
+        const foundGoal = await Goals.find({userId: req.auth._id}) // just changed this "const foundGoal = await Goals.findById(req.params.id)""
         return res.status(200).send(foundGoal)
     } catch (error) {
         res.status(500)
@@ -24,6 +24,7 @@ goalsRouter.get('/:id', async (req, res, next)=>{
 
 goalsRouter.post('/', async(req, res, next) => {
     try {
+        req.body.userId = req.auth._id // Just added this
         const newGoal = new Goals(req.body)
         const savedGoal = await newGoal.save()
         return res.status(201).send(savedGoal)

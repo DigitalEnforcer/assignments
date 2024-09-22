@@ -5,6 +5,7 @@ import Public from "./components/Public"
 import Navbar from "./components/Navbar"
 import { UserContext } from "./context/UserProvider"
 import { Routes, Route, Navigate } from "react-router-dom"
+import './index.css'
 
 export default function App() {
 
