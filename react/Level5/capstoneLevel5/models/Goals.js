@@ -13,6 +13,10 @@ const goalsSchema = new Schema({
     userId: {
         type: Schema.Types.ObjectId,
         ref: "User"
+    },
+    username: {
+        type: String,
+        required: true
     }
 },  {timestamps: true})
 module.exports = mongoose.model('Goals', goalsSchema)

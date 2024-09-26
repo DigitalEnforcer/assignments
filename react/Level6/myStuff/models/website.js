@@ -1,16 +1,21 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose")
 const Schema = mongoose.Schema
 
-const journalSchema = new Schema({
+const websiteSchema = new Schema({
+
     title: {
-        type: String, 
-        required: true
-    },
-    journalEntry: {
         type: String,
         required: true
     },
-    userId: {
+    website: {
+        type: String,
+        required: true
+    },
+    genre: {
+        type: String,
+        required: true
+    },
+    userId: { 
         type: Schema.Types.ObjectId,
         ref: "User"
     },
@@ -18,6 +23,7 @@ const journalSchema = new Schema({
         type: String,
         required: true
     }
-}, {timestamps: true})
 
-module.exports = mongoose.model('Journal', journalSchema)
+})
+
+module.exports = mongoose.model("Website", websiteSchema)

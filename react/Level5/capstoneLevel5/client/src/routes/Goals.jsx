@@ -11,19 +11,19 @@ export default function Goals (){
     })
 
     function getGoals (){
-        axios.get("/api/goals")
+        axios.get("/api/goals") // added "main"
         .then(res => setGoals(res.data))
         .catch(err => console.log(err))
       }
     
     function deleteGoal (goalId){
-        axios.delete(`/api/goals/${goalId}`)
+        axios.delete(`/api/goals/${goalId}`) // added "main"
         .then (res => setGoals(prevGoals => prevGoals.filter(goal => goal._id !== goalId)))
         .catch(err => console.log(err))
     }
 
     function addGoal (newGoal){
-      axios.post (`/api/goals`, newGoal)
+      axios.post (`/api/goals`, newGoal) //added "main"
       .then (res => {setGoals(prevGoals => [...prevGoals, res.data])})
       .catch (err => console.log(err))
     }

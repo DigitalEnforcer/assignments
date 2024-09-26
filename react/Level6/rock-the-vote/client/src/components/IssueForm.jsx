@@ -3,7 +3,7 @@ import { UserContext } from "../context/UserProvider"
 
 export default function IssueForm(props){
 
-    const {addIssue} = useContext(UserContext)
+    const {addIssue} = useContext(UserContext) // already coming in through props "submit"
     const {title, description, imgUrl, _id, submit, handleToggle} = props
 
 

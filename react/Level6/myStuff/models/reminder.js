@@ -1,9 +1,10 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose")
 const Schema = mongoose.Schema
 
 const reminderSchema = new Schema({
+
     title: {
-        type: String, 
+        type: String,
         required: true
     },
     description: {
@@ -13,7 +14,7 @@ const reminderSchema = new Schema({
     important: {
         type: Boolean,
         default: false,
-        required: true
+        required: true 
     },
     userId: {
         type: Schema.Types.ObjectId,
@@ -21,8 +22,9 @@ const reminderSchema = new Schema({
     },
     username: {
         type: String,
-        required: true
+        required: true 
     }
+
 }, {timestamps: true})
 
-module.exports = mongoose.model('Reminder', reminderSchema)
+module.exports = mongoose.model("Reminder", reminderSchema)
