@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -28,6 +29,21 @@ nav {
     text-shadow: 2px 2px 1px #007bff
 }
 
+#auth-div{
+    display: flex
+}
+
+.login {
+    margin: auto 10px;
+    width: 250px;
+    border: 1px solid black;
+    padding: 90px 20px;
+    height: 311px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .title-container {
     text-align: center;

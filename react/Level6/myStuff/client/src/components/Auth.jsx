@@ -18,12 +18,12 @@ function Auth() {
         <div id = "auth-div">
           <div className="title-container">
                 <h1 className="title">Welcome to MyStuff</h1>
-                <p className="catchphrase">Where you can keep your all of your favorite things in ONE place</p>
+                <p className="catchphrase">Where you can keep all of your favorite things in ONE place</p>
             </div>
         {
           isMember ? 
           
-          <>
+          <div className="login">
             <Form 
               isMember = {isMember} 
               submit={login}
@@ -31,11 +31,11 @@ function Auth() {
             /> 
             <button onClick = {toggleForm} >Create a myStuff account?</button>
                  
-          </>
+          </div>
           
           : 
           
-          <>
+          <div className="login">
             <Form 
               isMember = {isMember} 
               submit={signup}
@@ -43,7 +43,7 @@ function Auth() {
             /> 
             <button onClick = {toggleForm}>Already a myStuff member?</button>
                    
-          </>
+          </div>
         }
         
      

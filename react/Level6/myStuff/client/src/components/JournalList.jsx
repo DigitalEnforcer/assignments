@@ -10,7 +10,7 @@ export default function JournalList(props){
         )
     })
     return(
-        <div className="website-container">
+        <div className="goal-container">
             {journalElements.reverse()}
         </div>
     )
