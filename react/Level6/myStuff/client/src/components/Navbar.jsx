@@ -9,12 +9,12 @@ function Navbar(props) {
         <nav>
             { token ?
                 <>
-                    <Link to = "/GoalPage"><button>Goals</button></Link>
-                    <Link to = "/public"><button>Everyone's Goals</button></Link>
-                    <Link to = "/JournalPage"><button>Journal</button></Link>
-                    <Link to = "/ReminderPage"><button>Reminders</button></Link>
-                    <Link to = "/WebsitePage"><button>Fav Websites</button></Link>
-                    <Link to = "/"><button onClick = {logout}>Logout</button></Link>
+                    <Link to = "/GoalPage">Goals</Link>
+                    <Link to = "/public">Everyone's Goals</Link>
+                    <Link to = "/JournalPage">Journal</Link>
+                    <Link to = "/ReminderPage">Reminders</Link>
+                    <Link to = "/WebsitePage">Fav Websites</Link>
+                    <Link to = "/" onClick = {logout}>Logout</Link>
                 </>
                 : 
                 <>

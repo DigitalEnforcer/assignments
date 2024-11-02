@@ -72,7 +72,8 @@ export default function UserProvider(props){
                 return {
                     ...prevUserState,
                     token: "",
-                    user: {}
+                    user: {},
+                    errMsg: ""
                 }
             })
         } catch (error) {

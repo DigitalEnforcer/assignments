@@ -29,19 +29,22 @@ function Form(props) {
             <form name = 'auth-form' id = 'auth-form' onSubmit={handleSubmit}>
 
                 <input 
+                    className="usernameInput"
                     placeholder="username" 
                     name="username"
                     value={formData.username}
                     onChange={handleChange}
                 />
                 <input 
+                    className="passwordInput"
+                    type="password"
                     placeholder='password' 
                     name="password"
                     value={formData.password}
                     onChange={handleChange}
                 />
-                <button>{isMember ? "Login" : "Signup"}</button>
-                <p style= {{color: "red"}}>{errMsg}</p>
+                <button className="login-button">{isMember ? "Login" : "Signup"}</button>
+                <p className="errorMsg">{errMsg}</p>
             </form>
        
      );

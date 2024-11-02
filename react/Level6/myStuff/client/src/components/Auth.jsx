@@ -17,7 +17,7 @@ function Auth() {
     return ( 
         <div id = "auth-div">
           <div className="title-container">
-                <h1 className="title">Welcome to MyStuff</h1>
+                <h1 className="title">Welcome to myStuff</h1>
                 <p className="catchphrase">Where you can keep all of your favorite things in ONE place</p>
             </div>
         {

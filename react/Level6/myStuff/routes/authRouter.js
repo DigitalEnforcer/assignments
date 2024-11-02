@@ -8,7 +8,7 @@ authRouter.post('/signup', async(req, res, next) =>{
         const user = await User.findOne({username: req.body.username})
         if(user){
             res.status(403)
-            return next(new Error('username is already taken'))
+            return next(new Error('Username is already taken'))
         }
         const newUser = new User(req.body)
         const savedUser = await newUser.save()
